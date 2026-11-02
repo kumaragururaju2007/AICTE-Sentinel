@@ -9,7 +9,6 @@ import {
   BarChart3, BrainCircuit, Terminal, ArrowUpRight, ChevronUp, Bot, Info
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import aicteCampusImg from '../assets/aicte_campus.jpg';
 
 // AICTE Logo Emblem SVG
 function AicteLogo({ className = "h-10 w-10" }) {
@@ -369,38 +368,107 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Right Visual: Sophisticated Campus & Floating Telemetry Cards */}
+            {/* Right Visual: Pure Code/CSS/SVG Digital Regulatory Dashboard Composition */}
             <div className="lg:col-span-5 relative">
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 
-                {/* Glowing Aura Behind Campus */}
+                {/* Glowing Aura Behind Card */}
                 <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-emerald-500/20 via-teal-500/20 to-blue-500/20 blur-2xl -z-10" />
 
-                {/* Campus Image Frame */}
-                <div className="relative rounded-3xl overflow-hidden border border-emerald-900/10 dark:border-emerald-500/20 shadow-2xl bg-white dark:bg-slate-900">
-                  <img
-                    src={aicteCampusImg}
-                    alt="AICTE Sentinel Headquarters"
-                    className="w-full h-[360px] sm:h-[420px] object-cover object-center transform hover:scale-105 transition-transform duration-700"
-                  />
-                  {/* Subtle Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+                {/* Main Interactive Glassmorphism Dashboard Terminal */}
+                <div className="relative rounded-3xl overflow-hidden border border-emerald-900/10 dark:border-emerald-500/20 shadow-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl p-5 sm:p-6 space-y-4">
                   
-                  {/* Flagship AI Chip Badge */}
-                  <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between p-3 rounded-2xl bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border border-white/40 dark:border-slate-700/60 shadow-lg">
+                  {/* Terminal Header */}
+                  <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800">
                     <div className="flex items-center gap-2.5">
-                      <div className="h-8 w-8 rounded-xl bg-[#087443] flex items-center justify-center text-white font-mono font-bold text-xs">
-                        AI
+                      <div className="h-8 w-8 rounded-xl bg-gradient-to-br from-[#087443] to-[#16A36A] flex items-center justify-center text-white shadow-xs">
+                        <Cpu className="h-4 w-4" />
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-slate-900 dark:text-slate-100">Sentinel Automation Core</div>
-                        <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-mono">Live Multi-Bureau Neural Pipeline</div>
+                        <div className="text-xs font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
+                          <span>AICTE Scrutiny Engine</span>
+                          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                        </div>
+                        <div className="text-[10px] text-slate-400 font-mono">Dossier: APP-2026-8942 • AI Pipeline</div>
                       </div>
                     </div>
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300">
-                      Active
+                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                      SECURE
                     </span>
                   </div>
+
+                  {/* Scrutiny Progress & Active Stage */}
+                  <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/70 dark:border-slate-700/60 space-y-2">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-semibold text-slate-700 dark:text-slate-300">Stage 02: Document Scrutiny Desk</span>
+                      <span className="font-bold text-[#087443] dark:text-[#16A36A]">75% Complete</span>
+                    </div>
+                    <div className="h-2 w-full rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                      <div className="h-full rounded-full bg-gradient-to-r from-[#087443] to-[#16A36A] w-3/4 animate-pulse" />
+                    </div>
+                    <div className="flex justify-between text-[10px] text-slate-400 font-mono pt-0.5">
+                      <span>Ingestion ✓</span>
+                      <span className="text-[#087443] dark:text-emerald-400 font-bold">Scrutiny ⟳</span>
+                      <span>EVC Inspection</span>
+                      <span>EoA Order</span>
+                    </div>
+                  </div>
+
+                  {/* Document Verification & OCR Scan Simulation */}
+                  <div className="p-3.5 rounded-2xl bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200/70 dark:border-emerald-800/40 space-y-2.5">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <FileCheck2 className="h-4 w-4 text-[#087443] dark:text-emerald-400" />
+                        <span className="text-xs font-bold text-slate-900 dark:text-slate-100">OCR Land Title Deed Extraction</span>
+                      </div>
+                      <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-900/60 px-1.5 py-0.5 rounded">
+                        <CheckCircle className="h-3 w-3" /> 99.4% Match
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-2 gap-2 text-[11px] font-mono">
+                      <div className="p-2 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-emerald-100 dark:border-emerald-900">
+                        <span className="text-slate-400 block text-[9px]">Campus Area</span>
+                        <strong className="text-slate-800 dark:text-slate-200">5.20 Acres (Norm: 4.0)</strong>
+                      </div>
+                      <div className="p-2 rounded-xl bg-white/80 dark:bg-slate-900/80 border border-emerald-100 dark:border-emerald-900">
+                        <span className="text-slate-400 block text-[9px]">Lease Validity</span>
+                        <strong className="text-slate-800 dark:text-slate-200">30 Yrs (Till 2054)</strong>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Telemetry Row: Predictive Risk & SHA-256 Ledger */}
+                  <div className="grid grid-cols-2 gap-3 pt-1">
+                    <div className="p-3 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700">
+                      <div className="text-[10px] text-slate-400 font-semibold uppercase">Predicted Delay Risk</div>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className="text-xl font-extrabold text-[#087443] dark:text-[#16A36A] font-mono">12%</span>
+                        <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950 px-1.5 py-0.5 rounded">
+                          ↓ Low Risk
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="p-3 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/70 dark:border-slate-700">
+                      <div className="text-[10px] text-slate-400 font-semibold uppercase">Audit Blockchain Ledger</div>
+                      <div className="flex items-center gap-1.5 mt-1 text-slate-700 dark:text-slate-300 font-mono text-xs">
+                        <Lock className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400" />
+                        <span className="truncate">#049a8f...92e1</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Live Status Footer */}
+                  <div className="pt-2 flex items-center justify-between text-[11px] text-slate-500 border-t border-slate-100 dark:border-slate-800">
+                    <span className="flex items-center gap-1.5 font-medium">
+                      <Activity className="h-3.5 w-3.5 text-emerald-500" /> Regional SLA: 3 Days Remaining
+                    </span>
+                    <span className="font-mono text-slate-400 text-[10px]">
+                      Zero Human Scrutiny Bottlenecks
+                    </span>
+                  </div>
+
                 </div>
 
                 {/* Floating Card 1: AI Document Verification (Top Left) */}
@@ -425,14 +493,25 @@ export default function LandingPage() {
                   </div>
                 </div>
 
-                {/* Floating Card 3: Predicted Delay Risk (Bottom Right) */}
-                <div className="absolute -bottom-6 -right-4 sm:-right-6 p-3 rounded-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-emerald-300 dark:border-emerald-700 shadow-xl">
-                  <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400">Predicted Delay Risk</div>
-                  <div className="flex items-center gap-2 mt-0.5">
-                    <span className="text-xl font-extrabold text-[#087443] dark:text-[#16A36A]">12%</span>
-                    <span className="inline-flex items-center text-[11px] font-bold text-emerald-600 bg-emerald-50 dark:bg-emerald-950 px-1.5 py-0.5 rounded">
-                      ↓ Low Risk
-                    </span>
+                {/* Floating Card 3: Compliance Tracking (Bottom Left) */}
+                <div className="absolute -bottom-5 -left-4 sm:-left-6 p-2.5 sm:p-3 rounded-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-purple-200 dark:border-purple-800 shadow-xl flex items-center gap-2.5">
+                  <div className="h-8 w-8 rounded-xl bg-purple-100 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 flex items-center justify-center">
+                    <Shield className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-900 dark:text-slate-100">Compliance Tracking</div>
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400">100% Institutional Integrity</div>
+                  </div>
+                </div>
+
+                {/* Floating Card 4: Workflow Automation (Bottom Right) */}
+                <div className="absolute -bottom-5 -right-4 sm:-right-6 p-2.5 sm:p-3 rounded-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border border-emerald-300 dark:border-emerald-700 shadow-xl flex items-center gap-2.5">
+                  <div className="h-8 w-8 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-[#087443] dark:text-emerald-400 flex items-center justify-center">
+                    <Sliders className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold text-slate-900 dark:text-slate-100">Workflow Automation</div>
+                    <div className="text-[10px] text-slate-500 dark:text-slate-400">Adaptive Approval Trees</div>
                   </div>
                 </div>
 

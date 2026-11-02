@@ -41,3 +41,4 @@ backend/.env
 backend/aicte_sentinel.db
 aicte_sentinel.db
 uploads/
+
